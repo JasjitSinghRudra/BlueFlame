@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blue Flame</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript">
+	
+function scaleUp(obj, size){
+obj.style.fontSize = size;
+}
+function show-hide(){
+	var click = document.getElementById("drop-content");
+	if (click.style.display=="none"){
+		click.style.display="block";
+	}else{
+		click.style.display = "none";
+	}
+}
+</script>
+<style type="text/css">
+.dropdown{
+ position:relative;
+ display:inline-block;
+}
+.drop-content{
+ display:none ;
+ position:absolute;
+ z-index:1;
+ width:120px;
+}
+.drop-content a{
+ display:block;
+ background:#d0e0cc;
+ padding:10px;
+ color:black;
+ text-decoration:none;
+ font-size:15px;
+ margin-top:2px;
+ line-height: 20px;
+}
+.dropdown:hover .drop-content{
+ display:block;
+}
+button {
+  background-color: #34eb3d;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+button:hover
+  {
+    box-shadow: 0px 5px 0px #117cee;
+    transform:translateY(5px);
+    background-color: #31c429;
+  }
+</style>
+</head>
+<body >
+	<div class="nav">
+		<label for="toggle">&#9776;</label>
+		<input type="checkbox" id="toggle">
+		<div class="menu">
+			<a href="file:///C:/Users/rudra/Desktop/BLueFlame/vegetarian.html" onmouseover="scaleUp(this,'30px')" onmouseout="scaleUp(this,'16px')">Vegetarian</a>
+			<a href="file:///C:/Users/rudra/Desktop/BLueFlame/Non-Vegetarian.html" onmouseover="scaleUp(this,'30px')" onmouseout="scaleUp(this,'16px')">Non-Vegetarian</a>
+			<a href="file:///C:/Users/rudra/Desktop/BLueFlame/guest.php" onmouseover="scaleUp(this,'30px')" onmouseout="scaleUp(this,'16px')">Guest Recepies</a>
+			<a href="file:///C:/Users/rudra/Desktop/BLueFlame/homepage.html"><img src="blueflame.png" alt="BlueFlame" align="right" width="80" height="80" id="flame"></a>
+		</div>
+		<div class="bodi" style="position: absolute; top:50%; left:50%; transform: translate(-50%,-50%); margin: 0; padding: 0; font-size: 50px; font-family: Papyrus; font-size:4vw;">
+			<p align="center"> Welcome to Blue Flame, an online recepies site for the whole family.</p><br><br>
+			<div class="dropdown" style="position: absolute; top:50%; left:50%; transform: translate(-50%,-50%); margin: 0; padding: 0;">
+			  <br><br><p> <button class="button" type="button" style="color: white">Explore</button></p>
+			  <div class="drop-content"  style="position top:70%; left:50%; transform: translate(-50%,-50%); margin: 0; padding: 0;">
+			  	<br>
+			   <a href="file:///C:/Users/rudra/Desktop/BLueFlame/vegetarian.html">Vegetarian</a>
+			   <a href="file:///C:/Users/rudra/Desktop/BLueFlame/Non-Vegetarian.html">Non-Vegetarian</a>
+			   <a href="file:///C:/Users/rudra/Desktop/BLueFlame/guest.php">Guest Recepies</a>
+			  </div>
+			 </div>
+		</div>
+	</div>
+
+</body>
+</html>
